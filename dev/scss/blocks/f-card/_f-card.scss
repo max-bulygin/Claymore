@@ -1,0 +1,21 @@
+.f-card {
+  padding: 10px;
+  text-align: center;
+
+  &__img {
+    margin-bottom: 20px;
+  }
+  &__name {
+    color: #2c3e50;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  &__article {
+    color: #2c3e50;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+  }
+}

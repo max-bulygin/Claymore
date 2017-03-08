@@ -1,0 +1,38 @@
+.contacts {
+  background: #34495e;
+  padding-top: 105px;
+  padding-bottom: 108px;
+
+  &__text {
+    color: #fff;
+  }
+
+  &__form {
+  }
+
+  &__header {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  &__paragraph {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 40px;
+  }
+
+  &__adress {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  &__phone {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  &__mail {
+    display: block;
+  }
+}

@@ -1,0 +1,201 @@
+.container {
+  @include outer-container();
+  padding: 0 1.25%;
+}
+
+.promo {
+  @include row();
+  &__img {
+    @include span-columns(6);
+    @include omega();
+  }
+  &__text {
+    @include span-columns(6);
+  }
+}
+
+.about {
+  &__wrapper {
+    @include row();
+  }
+  &__text {
+    @include span-columns(8);
+  }
+  &__img {
+    @include span-columns(3);
+    @include shift(1);
+  }
+}
+
+.features {
+  &__wrapper {
+    @include row();
+  }
+  &__unit {
+    @include span-columns(4);
+  }
+}
+
+.feedback {
+  @include span-columns(6);
+  @include omega();
+  &__img {
+    @include span-columns(2 of 6);
+  }
+  &__text {
+    @include span-columns(4 of 6);
+  }
+}
+
+.contacts {
+  &__wrapper {
+    @include row();
+  }
+  &__text {
+    @include span-columns(6);
+  }
+  &__form {
+    @include span-columns(6);
+  }
+}
+
+/* ==========================================================================
+   Screen Media
+   ========================================================================== */
+
+$screen: new-breakpoint(max-width 900px 10);
+
+.promo {
+  &__img {
+    @include media($screen) {
+      @include span-columns(5);
+    }
+  }
+  &__text {
+    @include media($screen) {
+      @include span-columns(5);
+    }
+  }
+}
+
+/* ==========================================================================
+   Tablet
+   ========================================================================== */
+
+$tablet: new-breakpoint(max-width 768px 8);
+
+.promo {
+  &__img {
+    @include media($tablet) {
+      display: none;
+    }
+  }
+  &__text {
+    @include media($tablet) {
+      @include span-columns(6);
+      @include shift(1);
+      text-align: center;
+    }
+  }
+}
+
+.about {
+  &__text {
+    @include media($tablet) {
+      @include span-columns(4);
+      @include omega();
+    }
+  }
+  &__img {
+    @include media($tablet) {
+      @include span-columns(4);
+      @include omega();
+    }
+  }
+}
+
+.feedback {
+  @include media($tablet) {
+    @include span-columns(4);
+    @include omega();
+    &__img {
+      @include span-columns(2 of 4);
+      @include shift(1);
+    }
+    &__text {
+      @include span-columns(4 of 4);
+    }
+  }
+}
+
+.contacts {
+  &__text {
+    @include media($tablet) {
+      @include span-columns(4);
+    }
+  }
+  &__form {
+    @include media($tablet) {
+      @include span-columns(4);
+    }
+  }
+}
+
+/* ==========================================================================
+   Phone
+   ========================================================================== */
+
+$phone: new-breakpoint(max-width 480px 4);
+
+.promo {
+  &__text {
+    @include media($phone) {
+      @include span-columns(4);
+    }
+  }
+}
+
+.about {
+  &__text {
+    @include media($phone) {
+      @include span-columns(4);
+    }
+  }
+  &__img {
+    @include media($phone) {
+      @include span-columns(4);
+    }
+  }
+}
+
+.features {
+  &__unit {
+    @include media($phone) {
+      @include span-columns(4);
+    }
+  }
+}
+
+//.feedback {
+//  @include span-columns(6);
+//  @include omega();
+//  &__img {
+//    @include span-columns(2 of 6);
+//  }
+//  &__text {
+//    @include span-columns(4 of 6);
+//  }
+//}
+
+.contacts {
+  &__text {
+    @include media($phone) {
+      @include span-columns(4);
+    }
+  }
+  &__form {
+    @include media($phone) {
+      @include span-columns(4);
+    }
+  }
+}

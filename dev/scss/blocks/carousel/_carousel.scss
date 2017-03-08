@@ -1,0 +1,20 @@
+.carousel {
+  &__item {
+    color: white;
+    text-align: center;
+  }
+
+  &__header {
+    font-size: 30px;
+    margin-bottom: 6px;
+  }
+
+  &__sub-header {
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  &__img {
+    margin-top: 99px;
+  }
+}

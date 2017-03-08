@@ -1,0 +1,15 @@
+.about {
+  color: #34495e;
+  padding-top: 109px;
+  padding-bottom: 123px;
+
+  &__header {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 16px;
+  }
+  &__paragraph {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
