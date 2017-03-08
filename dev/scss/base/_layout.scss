@@ -1,13 +1,12 @@
 .container {
   @include outer-container();
-  padding: 0 1.25%;
 }
 
 .promo {
   @include row();
   &__img {
     @include span-columns(6);
-    @include omega();
+    //@include omega();
   }
   &__text {
     @include span-columns(6);
