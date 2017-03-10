@@ -19,8 +19,8 @@
 // Import Bootstrap Responsive Utilities to project
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
 
-// Import Bootstrap Navbars to project
-@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/navbar";
+//// Import Bootstrap Navbars to project
+//@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/navbar";
 
 @import "base/typography";
 
@@ -39,5 +39,6 @@
 @import "blocks/contact-form";
 @import "blocks/footer";
 @import "blocks/hex";
+@import "blocks/curve";
 
 @import "base/layout";
