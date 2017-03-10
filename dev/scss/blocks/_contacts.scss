@@ -5,9 +5,19 @@
 
   &__text {
     color: #fff;
-  }
+    margin-bottom: 40px;
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+    }
 
-  &__form {
+    a {
+      color: inherit;
+    }
+
+    .icon {
+      font-size: 1.6em;
+      vertical-align: -4px;
+    }
   }
 
   &__header {
@@ -18,7 +28,7 @@
   &__paragraph {
     font-size: 14px;
     font-weight: 300;
-    line-height: 20px;
+    line-height: 2;
     margin-bottom: 40px;
   }
 

@@ -6,7 +6,7 @@ var rigger      = require('gulp-rigger');
 gulp.task('serve', ['sass', 'rigger'], function() {
 
     browserSync.init({
-        server: "./build"
+        server: ["./build", "./bower_components"]
     });
 
     gulp.watch('./dev/**/*.html', ['rigger']);

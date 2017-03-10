@@ -7,9 +7,34 @@
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 16px;
+    text-align: center;
+    
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+
+    &--no-t-margin {
+      margin-top: 0;
+    }
   }
   &__paragraph {
     font-size: 18px;
     line-height: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+      margin-bottom: 0;
+    }
+  }
+
+  &__img img{
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 768px) {
+      margin: initial;
+    }
   }
 }
