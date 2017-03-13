@@ -1,7 +1,12 @@
 .contacts {
   background: #34495e;
-  padding-top: 105px;
-  padding-bottom: 108px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @media (min-width: 768px) {
+    padding-top: 105px;
+    padding-bottom: 108px;
+  }
 
   &__text {
     color: #fff;

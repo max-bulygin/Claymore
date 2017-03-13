@@ -1,10 +1,16 @@
 .promo {
   @include make-row();
   &__img {
-    @include make-md-column(6);
+    @include make-xs-column(12);
+    @include make-sm-column(6);
+    @include make-sm-column-pull(6);
+    @include make-sm-column-offset(0);
   }
   &__text {
-    @include make-md-column(6);
+    @include make-xs-column(12);
+    @include make-sm-column(6);
+    @include make-sm-column-push(6);
+    @include make-sm-column-offset(0);
   }
 }
 

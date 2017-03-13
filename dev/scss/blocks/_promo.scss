@@ -1,17 +1,31 @@
 .promo {
   font-size: 0;
+  
   &__img {
     display: inline-block;
-    width: 46%;
+    //width: 46%;
     vertical-align: top;
+    text-align: center;
+    margin-top: 50px;
+    img {
+      max-width: 100%;
+    }
 
+    @media (min-width: 769px) {
+      text-align: left;
+      margin-top: 0;
+    }
   }
 
   &__text {
     display: inline-block;
-    width: 54%;
+    //width: 54%;
     vertical-align: top;
+    text-align: center;
 
+    @media (min-width: 769px) {
+      text-align: left;
+    }
   }
 
   &__headline {
@@ -30,17 +44,42 @@
   
   &__buttons {
     position: relative;
-    margin-top: 58px;
+    margin-top: 50px;
+    text-align: center;
+
+    @media (min-width: 376px) {
+      margin-top: 30px;
+    }
+    
+    @media (min-width: 769px) {
+      text-align: left;
+      margin-top: 58px;
+    }
   }
 
   &__btn {
-    margin-right: 10px;
+    width: 100%;
+    margin: 0 0 10px !important;
+  }
+
+  @media (min-width: 376px) {
+
+    &__btn {
+      width: auto;
+    }
+
+    &__btn + &__btn {
+      margin-left: 10px !important;
+      margin-bottom: 0;
+    }
   }
   
   &__logic {
     position: absolute;
-    top: 14px;
-    left: 162px;
+    top: 26%;
+    margin-top: 14px;
+    left: 50%;
+    margin-left: -14px;
     display: block;
     width: 28px;
     height: 28px;
@@ -50,5 +89,14 @@
     background-color: #fff;
     text-align: center;
     line-height: 25px;
+
+    @media (min-width: 376px) {
+      top: 14px;
+      margin-top: 0;
+    }
+
+    @media (min-width: 769px) {
+      left: 175px;
+    }
   }
 }

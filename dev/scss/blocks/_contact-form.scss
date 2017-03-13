@@ -1,6 +1,7 @@
 $margin: 16px;
 
 .contact-form {
+
   &__input {
     border-radius: 3px;
     padding: 15px;
@@ -11,6 +12,7 @@ $margin: 16px;
     width: 100%;
     margin-bottom: $margin;
     }
+
   &__input--short {
     width: 100%;
     @media (min-width: 991px) {
@@ -27,9 +29,13 @@ $margin: 16px;
   
   &__btn {
     float: right;
-    @media (min-width: 768px) and (max-width: 991px) {
+    @media (max-width: 991px) {
       min-width: calc(50% - 16px / 2);
     }
+  }
+
+  &__btn:hover {
+    color: #fff;
   }
 
   &__btn + &__btn {

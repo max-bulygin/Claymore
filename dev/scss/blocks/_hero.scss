@@ -1,9 +1,13 @@
 .hero {
   background: url('../img/hero-bg.png') center no-repeat;
   background-size:cover;
-  height: 879px;
+  height: 1040px;
   color: white;
   position: relative;
+
+  @media (min-width: 769px) {
+    height: 879px;
+  }
 
   &__header {
     padding-top: 70px;
@@ -21,6 +25,12 @@
   }
 
   &__content {
-    margin-top: 173px;
+    position: relative;
+    z-index: 2;
+
+    @media (min-width: 769px) {
+      margin-top: 173px;
+    }
+
   }
 }

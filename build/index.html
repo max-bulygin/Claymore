@@ -33,9 +33,6 @@
     <div class="hero__content">
         <div class="container">
             <div class="promo">
-                <div class="promo__img">
-                    <img src="../img/ipad.png" alt="" class="promo__picture">
-                </div>
                 <div class="promo__text">
                     <h1 class="promo__headline">Quam eleifend metus commodo</h1>
                     <p class="promo__paragraph">luctus at sit amet urna. Quisque non augue tincidunt, egest
@@ -44,9 +41,12 @@
                     </p>
                     <div class="promo__buttons">
                         <a href="#" class="promo__btn btn btn--primary">Purchase now</a>
-                        <span class="promo__logic">or</span>
                         <a href="#" class="promo__btn btn btn--secondary">Learn more</a>
+                        <span class="promo__logic">or</span>
                     </div>
+                </div>
+                <div class="promo__img">
+                    <img src="../img/ipad.png" alt="" class="promo__picture">
                 </div>
             </div>
         </div>
@@ -55,10 +55,209 @@
         <img src="img/curve.svg" alt="">
     </div>
 </section>
-<!--//= templates/about.html-->
-<!--//= templates/features.html-->
-<!--//= templates/sliders.html-->
-<!--//= templates/people.html-->
+<section class="about">
+    <div class="container">
+        <div class="about__wrapper">
+            <div class="about__text">
+                <h2 class="about__header about__header--no-t-margin">About Us</h2>
+                <p class="about__paragraph">Sed non massa quis nisl tincidunt posuere sit amet vitae sem. Praesent
+                    sed convallis quam. Donec hendrerit neque sit amet tellus ornare et
+                    semper lorem lacinia. Suspendisse ac pellentesque odio. Nunc pharetra
+                    malesuada nisi ac condimentum. Curabitur porttitor pulvinar </p>
+            </div>
+            <div class="about__img">
+                <img class="img-responsive" src="../img/ico-about.png" alt="graphic ico">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="features">
+    <div class="container">
+        <div class="features__wrapper">
+            <div class="f-card features__unit">
+                <div class="f-card__img">
+                    <img src="../img/ico-screen.png" alt="">
+                </div>
+                <h3 class="f-card__name">Fully Baked up </h3>
+                <p class="f-card__article">Curabitur tincidunt dapibus odio, eu gravida felis
+                    blandit vel. Vivamus feugiat auctor lorem non
+                    eleifend. Nam eu pellentesque est, vitae
+                    interdum nisi.</p>
+            </div>
+            <div class="f-card features__unit">
+                <div class="f-card__img">
+                    <img src="../img/ico-heart.png" alt="">
+                </div>
+                <h3 class="f-card__name">Build With Love</h3>
+                <p class="f-card__article">Nullam dignissim felis diam, sed ultricies nisl
+                    ultricies quis. Maecenas feugiat urna ante, et
+                    viverra tellus facilisis ut. In hac habitasse platea
+                    dictumst.</p>
+            </div>
+            <div class="f-card features__unit">
+                <div class="f-card__img">
+                    <img src="../img/ico-responsive.png" alt="">
+                </div>
+                <h3 class="f-card__name">Fully Responsive</h3>
+                <p class="f-card__article">Aliquam mattis massa at urna tincidunt ultrices.
+                    Curabitur lobortis ante vulputate, imperdiet felis
+                    a, adipiscing odio aliquam pharetra molestie
+                    mauris</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="sliders">
+    <div class="container">
+        <div class="carousel">
+            <h3 class="carousel__header">Lorem ipsum dolor sit amet</h3>
+            <p class="carousel__sub-header"> consectetur adipiscing elit. Maecenas facilisis ligula non ornare vehicula. </p>
+            <div class="carousel__item">
+                <img class="carousel__img" src="./img/laptop.png" alt="single slide">
+            </div>
+
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <!--<img src="..." alt="...">-->
+                        <div class="carousel-caption">
+                            Cap 1
+                        </div>
+                    </div>
+                    <div class="item">
+                        <!--<img src="..." alt="...">-->
+                        <div class="carousel-caption">
+                            Cap 2
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span aria-hidden="true"><img src="img/ico-arrow-left.png" alt=""></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span aria-hidden="true"><img src="img/ico-arrow-right.png" alt=""></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="people">
+    <div class="container">
+        <h3 class="people__header">What People Say</h3>
+        <div class="feedback-wrappper">
+            <div class="feedback">
+                <div class="feedback__img">
+                    <div class="hex">
+                        <div class="hex__inner-1">
+                            <div class="hex__inner-2">
+                                <img class="hex__img" src="img/ava-1.jpg" alt="Jon Doe">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <article class="feedback__text">
+                    <h5 class="feedback__head">Excepteur sint
+                        occaecat</h5>
+                    <p class="feedback__paragraph">Sed non massa quis nisl tincidunt posuere sit
+                        amet vitae sem. Praesent sed convallis quam.</p>
+                </article>
+            </div>
+            <div class="feedback">
+                <div class="feedback__img">
+                    <div class="hex">
+                        <div class="hex__inner-1">
+                            <div class="hex__inner-2">
+                                <img class="hex__img" src="img/ava-2.jpg" alt="Ketty Perry">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <article class="feedback__text">
+                    <h5 class="feedback__head">Excepteur sint occaecat</h5>
+                    <p class="feedback__paragraph">Sed non massa quis nisl tincidunt posuere sit
+                        amet vitae sem. Praesent sed convallis quam.</p>
+                </article>
+            </div>
+            <div class="feedback">
+                <div class="feedback__img">
+                    <div class="hex">
+                        <div class="hex__inner-1">
+                            <div class="hex__inner-2">
+                                <img class="hex__img" src="img/ava-3.jpg" alt="Mike Woods">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <article class="feedback__text">
+                    <h5 class="feedback__head">Excepteur sint occaecat</h5>
+                    <p class="feedback__paragraph">Sed non massa quis nisl tincidunt posuere sit
+                        amet vitae sem. Praesent sed convallis quam.</p>
+                </article>
+            </div>
+            <div class="feedback hidden-xs">
+                <div class="feedback__img">
+                    <div class="hex">
+                        <div class="hex__inner-1">
+                            <div class="hex__inner-2">
+                                <img class="hex__img" src="img/ava-4.jpg" alt="Will Smith">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <article class="feedback__text">
+                    <h5 class="feedback__head">Excepteur sint occaecat</h5>
+                    <p class="feedback__paragraph">Sed non massa quis nisl tincidunt posuere sit
+                        amet vitae sem. Praesent sed convallis quam.</p>
+                </article>
+            </div>
+            <div class="feedback hidden-xs">
+                <div class="feedback__img">
+                    <div class="hex">
+                        <div class="hex__inner-1">
+                            <div class="hex__inner-2">
+                                <img class="hex__img" src="img/ava-5.jpg" alt="Joan Rolling">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <article class="feedback__text">
+                    <h5 class="feedback__head">Excepteur sint occaecat</h5>
+                    <p class="feedback__paragraph">Sed non massa quis nisl tincidunt posuere sit
+                        amet vitae sem. Praesent sed convallis quam.</p>
+                </article>
+            </div>
+            <div class="feedback hidden-xs">
+                <div class="feedback__img">
+                    <div class="hex">
+                        <div class="hex__inner-1">
+                            <div class="hex__inner-2">
+                                <img class="hex__img" src="img/ava-6.jpg" alt="Vic Firth">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <article class="feedback__text">
+                    <h5 class="feedback__head">Excepteur sint occaecat</h5>
+                    <p class="feedback__paragraph">Sed non massa quis nisl tincidunt posuere sit
+                        amet vitae sem. Praesent sed convallis quam.</p>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="contacts">
     <div class="container">
         <div class="contacts__wrapper">
