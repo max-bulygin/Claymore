@@ -5,11 +5,11 @@ $(document).ready(function(){
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
-    prevArrow:"<span class='fa fa-chevron-left'></span>",
-    nextArrow:"<span class='fa fa-chevron-right'></span>"
+    fade: true,
+    cssEase: 'linear'
   });
 
   var $burgerDiv = $('#burger');

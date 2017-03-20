@@ -19,8 +19,12 @@
 // Import Bootstrap Responsive Utilities to project
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
 
-//// Import Font Awesome to project
+// Import Font Awesome to project
 @import "../../bower_components/font-awesome/scss/font-awesome";
+
+// Import Slick Carousel to project
+@import "../../bower_components/slick-carousel/slick/slick.scss";
+
 
 @import "base/typography";
 
@@ -31,7 +35,7 @@
 @import "blocks/about";
 @import "blocks/features";
 @import "blocks/f-card";
-@import "blocks/sliders";
+@import "blocks/slider";
 @import "blocks/carousel";
 @import "blocks/people";
 @import "blocks/feedback";

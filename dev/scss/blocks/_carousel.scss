@@ -1,20 +1,76 @@
-.carousel {
+.claymore-carousel {
+  position: relative;
+  color: white;
+  text-align: center;
+
+  &__laptop {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media (min-width: 650px) {
+      top: 163px
+    }
+  }
+
   &__item {
-    color: white;
-    text-align: center;
+    position: relative;
+    height: 500px;
   }
 
-  &__header {
-    font-size: 30px;
-    margin-bottom: 6px;
-  }
+  &__wrapper {
 
-  &__sub-header {
-    font-size: 18px;
-    font-weight: 300;
-  }
+    h3 {
+      font-size: 30px;
+      margin-bottom: 6px;
+      min-height: 66px;
 
-  &__img {
-    margin-top: 99px;
+      @media (min-width: 650px) {
+        min-height: initial;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 300;
+      min-height: 75px;
+
+      @media (min-width: 650px) {
+        min-height: initial;
+      }
+    }
+
+    img {
+      position: relative;
+      left: 50%;
+      top: 35px;
+      transform: translateX(-50%);
+
+      @media (min-width: 650px) {
+        top: 89px;
+      }
+    }
+
   }
+}
+
+.slick-arrow {
+  position: absolute;
+  font-size: 30px;
+  top: 50%;
+  cursor: pointer;
+  z-index: 10;
+
+  @media (min-width: 650px) {
+    font-size: 60px;
+  }
+}
+
+.slick-arrow.fa-chevron-right {
+  right: 0;
+}
+
+.slick-arrow.fa-chevron-left {
+  left: 0;
 }
