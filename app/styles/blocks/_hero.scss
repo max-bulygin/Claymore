@@ -1,0 +1,36 @@
+.hero {
+  background: url('../images/hero-bg.png') center no-repeat;
+  background-size:cover;
+  height: 1040px;
+  color: white;
+  position: relative;
+
+  @media (min-width: 769px) {
+    height: 879px;
+  }
+
+  &__header {
+    padding-top: 70px;
+    padding-bottom: 20px;
+    @include clearfix;
+  }
+
+  &__logo {
+    float: left;
+  }
+
+  &__nav {
+    margin-top: 7px;
+    float: right;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+
+    @media (min-width: 769px) {
+      margin-top: 173px;
+    }
+
+  }
+}
