@@ -72,7 +72,8 @@ gulp.task('images', () =>
 gulp.task('copy', () =>
   gulp.src([
     'app/*',
-    '!app/templates/*',
+    '!app/templates/**/*',
+    '!app/templates',
     'node_modules/apache-server-configs/docs/.htaccess'
   ], {
     dot: true
