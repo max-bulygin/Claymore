@@ -183,16 +183,16 @@ gulp.task('html', ['include'], () => {
 });
 
 // Clean output directory
-gulp.task('clean', () => del(['.tmp', 'dist/*', '!dist/.git'], {dot: true}));
+gulp.task('clean', () => {
+  return del(['.tmp', 'dist/*', '!dist/.git'], {dot: true});
+});
 
 // Watch files for changes & reload
-gulp.task('serve', ['clean', 'scripts', 'styles', 'html'], () => {
+gulp.task('serve', ['scripts', 'styles', 'html'], () => {
   browserSync({
     notify: false,
     // Customize the Browsersync console logging prefix
     logPrefix: 'WSK',
-    // Allow scroll syncing across breakpoints
-    scrollElementMapping: ['main', '.mdl-layout'],
     // Run as an https by uncommenting 'https: true'
     // Note: this uses an unsigned certificate which on first access
     //       will present a certificate warning in the browser.
@@ -219,8 +219,7 @@ gulp.task('serve:dist', ['default'], () =>
     //       will present a certificate warning in the browser.
     // https: true,
     server: 'dist',
-    tunnel: 'maxbass',
-    port: 3001
+    port: 8080
   })
 );
 
@@ -237,7 +236,7 @@ gulp.task('default', ['clean'], cb =>
 // Run PageSpeed Insights
 gulp.task('pagespeed', cb =>
   // Update the below URL to the public URL of your site
-  pagespeed('https://maxbass.localtunnel.me', {
+  pagespeed('example.com', {
     strategy: 'mobile'
     // By default we use the PageSpeed Insights free (no API key) tier.
     // Use a Google Developer API key if you have one: http://goo.gl/RkN0vE
