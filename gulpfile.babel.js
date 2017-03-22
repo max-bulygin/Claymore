@@ -64,7 +64,7 @@ gulp.task('images', () =>
       progressive: true,
       interlaced: true
     })))
-    .pipe(gulp.dest('dist/images'))
+    .pipe(gulp.dest('docs/images'))
     .pipe($.size({title: 'images'}))
 );
 
@@ -74,10 +74,10 @@ gulp.task('copy', () =>
     'app/*',
     '!app/*.html',
     '!app/templates',
-    'node_modules/apache-server-configs/dist/.htaccess'
+    'node_modules/apache-server-configs/docs/.htaccess'
   ], {
     dot: true
-  }).pipe(gulp.dest('dist'))
+  }).pipe(gulp.dest('docs'))
     .pipe($.size({title: 'copy'}))
 );
 
@@ -87,7 +87,7 @@ gulp.task('fonts', () =>
     'app/fonts/*',
   ], {
     dot: true
-  }).pipe(gulp.dest('dist/fonts'))
+  }).pipe(gulp.dest('docs/fonts'))
     .pipe($.size({title: 'fonts'}))
 );
 
@@ -121,7 +121,7 @@ gulp.task('styles', () => {
     .pipe($.if('*.css', $.cssnano()))
     .pipe($.size({title: 'styles'}))
     .pipe($.sourcemaps.write('./'))
-    .pipe(gulp.dest('dist/styles'))
+    .pipe(gulp.dest('docs/styles'))
     .pipe(gulp.dest('.tmp/styles'));
 });
 
@@ -147,7 +147,7 @@ gulp.task('scripts', () =>
     // Output files
     .pipe($.size({title: 'scripts'}))
     .pipe($.sourcemaps.write('.'))
-    .pipe(gulp.dest('dist/scripts'))
+    .pipe(gulp.dest('docs/scripts'))
     .pipe(gulp.dest('.tmp/scripts'))
 );
 
@@ -179,12 +179,12 @@ gulp.task('html', ['include'], () => {
     })))
     // Output files
     .pipe($.if('*.html', $.size({title: 'html', showFiles: true})))
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('docs'));
 });
 
 // Clean output directory
 gulp.task('clean', () => {
-  return del(['.tmp', 'dist/*', '!dist/.git'], {dot: true});
+  return del(['.tmp', 'docs/*', '!docs/.git'], {dot: true});
 });
 
 // Watch files for changes & reload
@@ -207,8 +207,8 @@ gulp.task('serve', ['scripts', 'styles', 'html'], () => {
   gulp.watch(['app/images/**/*'], reload);
 });
 
-// Build and serve the output from the dist build
-gulp.task('serve:dist', ['default'], () =>
+// Build and serve the output from the docs build
+gulp.task('serve:docs', ['default'], () =>
   browserSync({
     notify: false,
     logPrefix: 'WSK',
@@ -218,7 +218,7 @@ gulp.task('serve:dist', ['default'], () =>
     // Note: this uses an unsigned certificate which on first access
     //       will present a certificate warning in the browser.
     // https: true,
-    server: 'dist',
+    server: 'docs',
     port: 8080
   })
 );
@@ -247,16 +247,16 @@ gulp.task('pagespeed', cb =>
 // Copy over the scripts that are used in importScripts as part of the generate-service-worker task.
 gulp.task('copy-sw-scripts', () => {
   return gulp.src(['node_modules/sw-toolbox/sw-toolbox.js', 'app/scripts/sw/runtime-caching.js'])
-    .pipe(gulp.dest('dist/scripts/sw'));
+    .pipe(gulp.dest('docs/scripts/sw'));
 });
 
 // See http://www.html5rocks.com/en/tutorials/service-worker/introduction/ for
 // an in-depth explanation of what service workers are and why you should care.
 // Generate a service worker file that will provide offline functionality for
-// local resources. This should only be done for the 'dist' directory, to allow
+// local resources. This should only be done for the 'docs' directory, to allow
 // live reload to work as expected when serving from the 'app' directory.
 gulp.task('generate-service-worker', ['copy-sw-scripts'], () => {
-  const rootDir = 'dist';
+  const rootDir = 'docs';
   const filepath = path.join(rootDir, 'service-worker.js');
 
   return swPrecache.write(filepath, {
