@@ -1,0 +1,83 @@
+.promo {
+  @include make-row();
+  &__img {
+    @include make-xs-column(12);
+    @include make-sm-column(6);
+    @include make-sm-column-pull(6);
+    @include make-sm-column-offset(0);
+  }
+  &__text {
+    @include make-xs-column(12);
+    @include make-sm-column(6);
+    @include make-sm-column-push(6);
+    @include make-sm-column-offset(0);
+  }
+}
+
+.about {
+  &__wrapper {
+    @include make-row();
+  }
+  &__text {
+    @include make-xs-column(12);
+    @include make-sm-column(7);
+    @include make-md-column(8);
+  }
+  &__img {
+    @include make-xs-column(12);
+    @include make-sm-column(4);
+    @include make-sm-column-offset(1);
+    @include make-md-column(3);
+    @include make-md-column-offset(1);
+  }
+}
+
+.features {
+  &__wrapper {
+    @include make-row();
+  }
+  &__unit {
+    @include make-xs-column(12);
+    @include make-sm-column(6);
+    @include make-md-column(4);
+
+    &:last-child {
+      @include make-sm-column-offset(3);
+      @include make-md-column-offset(0);
+    }
+  }
+}
+
+.feedback-wrappper {
+  @include make-row();
+}
+
+.feedback {
+  @include make-xs-column(12);
+  @include make-sm-column(6);
+  &__img {
+    width: 140px;
+    float: left;
+  }
+  &__text {
+    width: calc(100% - 140px);
+    float: left;
+    padding-left: 20px;
+  }
+}
+
+.contacts {
+  &__wrapper {
+    @include make-row();
+  }
+  &__text {
+    @include make-xs-column(12);
+    @include make-sm-column(6);
+    @include make-md-column(6);
+  }
+  &__form {
+    @include make-xs-column(12);
+    @include make-sm-column(6);
+    @include make-md-column(6);
+  }
+}

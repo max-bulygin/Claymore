@@ -15,8 +15,9 @@
     "test",
     "tests"
   ],
-  "devDependencies": {
-    "bourbon": "^4.2.7",
-    "neat": "^1.8.0"
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "slick-carousel": "^1.6.0"
   }
 }

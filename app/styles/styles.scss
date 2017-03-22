@@ -1,0 +1,46 @@
+// Define custom variables for Bootstrap-sass
+@import "base/bootstrap-custom-variables";
+
+// Import Bootstrap Mixins to project
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+
+// Import Bootstrap Grid to project
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/grid";
+
+// Import Normalize.css to project
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
+
+// Import Bootstrap Typography to project
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/type";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
+
+// Import Bootstrap Responsive Utilities to project
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
+
+// Import Font Awesome to project
+@import "../../bower_components/font-awesome/scss/font-awesome";
+
+// Import Slick Carousel to project
+@import "../../bower_components/slick-carousel/slick/slick.scss";
+
+
+@import "base/typography";
+
+@import "blocks/hero";
+@import "blocks/nav";
+@import "blocks/promo";
+@import "blocks/btn";
+@import "blocks/about";
+@import "blocks/features";
+@import "blocks/f-card";
+@import "blocks/slider";
+@import "blocks/carousel";
+@import "blocks/people";
+@import "blocks/feedback";
+@import "blocks/contacts";
+@import "blocks/contact-form";
+@import "blocks/footer";
+@import "blocks/hex";
+@import "blocks/curve";
+
+@import "base/layout";

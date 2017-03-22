@@ -1,0 +1,29 @@
+.footer {
+  background: #2c3e50;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 25px;
+  position: relative;
+
+  @media (min-width: 769px) {
+    padding-top: 73px;
+    padding-bottom: 50px;
+  }
+
+  &:before {
+    content: '';
+    border: 20px solid transparent;
+    border-bottom-color: #2c3e50;
+    height: 0;
+    width: 0;
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    margin-left: -20px;
+  }
+
+  &__copyright {
+    color: #fff;
+    font-size: 16px;
+  }
+}

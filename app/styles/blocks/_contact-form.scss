@@ -1,0 +1,44 @@
+$margin: 16px;
+
+.contact-form {
+
+  &__input {
+    border-radius: 3px;
+    padding: 15px;
+    color: #fff;
+    background: rgba(#fff, .2);
+    border: 0;
+    font-size: 13px;
+    width: 100%;
+    margin-bottom: $margin;
+    }
+
+  &__input--short {
+    width: 100%;
+    @media (min-width: 991px) {
+      float: left;
+      width: calc(50% - 16px / 2);
+    }
+
+    & + & {
+      @media (min-width: 992px) {
+        margin-left: $margin;
+      }
+    }
+  }
+  
+  &__btn {
+    float: right;
+    @media (max-width: 991px) {
+      min-width: calc(50% - 16px / 2);
+    }
+  }
+
+  &__btn:hover {
+    color: #fff;
+  }
+
+  &__btn + &__btn {
+    margin-right: $margin;
+  }
+}
